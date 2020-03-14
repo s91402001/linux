@@ -75,6 +75,7 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
 	i2c0.dtbo \
 	i2c0-bcm2708.dtbo \
 	i2c1.dtbo \
+	i2c1-mpu6050.dtbo \
 	i2c1-bcm2708.dtbo \
 	i2c3.dtbo \
 	i2c4.dtbo \

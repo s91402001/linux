@@ -1,0 +1,23 @@
+/dts-v1/;
+/plugin/;
+
+/{
+	compatible = "brcm,bcm2835";
+
+	fragment@0 {
+		target = <&i2c1>;
+		__overlay__ {
+			status = "okay";
+			
+			mpu6050@0x58
+			{
+				compatible = "inv,mpu6050";
+				reg = <0x58>;
+			};
+		};
+	};
+
+	__overrides__ {
+		enable6050   = <0>,"+0";
+	};
+};
