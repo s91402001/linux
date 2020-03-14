@@ -851,4 +851,9 @@ config INPUT_SC27XX_VIBRA
 	  To compile this driver as a module, choose M here. The module will
 	  be called sc27xx_vibra.
 
+config INPUT_MPU6050_SELF
+	tristate "MPU6050 driver for learning I2C driver"
+	help
+		This option will add self-writen mpu6050 for learning i2c device
+		driver
 endif
